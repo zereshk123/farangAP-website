@@ -4,6 +4,7 @@
 }
 
 .site-logo{
+    padding: 0 !important;
     width: 70% !important;
 }
 
@@ -156,30 +157,128 @@
 
 .hero-section--text h1{
     font-family: vazir-m,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .hero-section--text h2{
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     color: #b8f10e;
 }
 
 .underline-text-brush{
-    width: 200px !important;
-    height: 60px !important;
-    margin-top: 120px;
+    width: 180px !important;
+    height: 55px !important;
+    margin-top: 110px;
 }
 
 .hero-section--text h3{
     margin-top: 50px;
     font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #5d5d5d;
 }
 
 .hero-section-img{
     width: 75% !important;
+}
+
+@media (max-width: 1025px){
+    .hero-section-img{
+        width: 90% !important;
+    }
+
+    .hero-section--text h1{
+        font-size: 27px;
+    }
+
+    .hero-section--text h2{
+        font-size: 35px;
+    }
+
+    .underline-text-brush{
+        width: 150px !important;
+        height: 50px !important;
+        margin-top: 85px;
+    }
+
+    .hero-section--text h3{
+        font-size: 19px;
+    }
+}
+@media (max-width: 769px){
+    .hero-section-img{
+        width: 100% !important;
+    }
+
+    .hero-section--text h1{
+        font-size: 21px;
+    }
+
+    .hero-section--text h2{
+        font-size: 35px;
+    }
+
+    .underline-text-brush{
+        width: 140px !important;
+        height: 50px !important;
+        margin-top: 80px;
+    }
+
+    .hero-section--text h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 426px){
+    .hero-section-img{
+        width: 80% !important;
+    }
+
+    .hero-section--text h1{
+        font-size: 25px;
+    }
+
+    .hero-section--text h2{
+        font-size: 35px;
+    }
+
+    .underline-text-brush{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 140px !important;
+        height: 50px !important;
+        margin-top: 80px;
+    }
+
+    .hero-section--text h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 376px){
+    .hero-section--text h1{
+        font-size: 23px;
+    }
+
+    .underline-text-brush{
+        margin-top: 75px;
+    }
+
+    .hero-section--text h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 320px){
+    .hero-section--text h1{
+        font-size: 20px;
+    }
+
+    .underline-text-brush{
+        margin-top: 70px;
+    }
+
+    .hero-section--text h3{
+        font-size: 18px;
+    }
 }
 
 /* Disable all hover */
