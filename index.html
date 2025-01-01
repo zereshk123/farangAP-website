@@ -68,7 +68,7 @@
         </div>
     </head>
 
-    <main class="d-flex justify-content-center">
+    <main class="d-flex flex-column justify-content-center">
         <section class="hero-section row gap-0 gap-sm-5 justify-content-between align-items-center">
             <div class="hero-section--text col-12 col-sm-5 d-flex flex-column gap-0 gap-sm-1 order-2 order-sm-1 text-sm-end text-center">
                 <h1>بهترین مشاوره، سریع ترین راه، با</h1>
@@ -78,13 +78,22 @@
             </div>
             
             <div class="hero-section--img col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end order-1 order-sm-2">
-                <img class="hero-section-img img-fluid" src="assets/images/hero-section-image.webp" alt="hero-image...">
+                <div class="hero-section--img__star-vector">
+                    <img class="hero-section--img__star-1 img-fluid" src="assets/images/hero-section-star-vector.webp" alt="star-image...">
+                    <img class="hero-section--img__star-2 img-fluid" src="assets/images/hero-section-star-vector.webp" alt="star-image...">
+                    <img class="hero-section--img__star-3 img-fluid" src="assets/images/hero-section-star-vector.webp" alt="star-image...">
+                </div>
+                <img class="hero-section--img__image img-fluid" src="assets/images/hero-section-image.webp" alt="hero-image...">
             </div>
         </section>
-        
+
+        <section>
+            <img src="assets/images/hero-section-star-vector.webp" alt="">
+        </section>
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
