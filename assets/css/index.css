@@ -149,6 +149,38 @@
     color: #000;
 }
 
+.hero-section{
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-section--text h1{
+    font-family: vazir-m,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.hero-section--text h2{
+    font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: #b8f10e;
+}
+
+.underline-text-brush{
+    width: 200px !important;
+    height: 60px !important;
+    margin-top: 120px;
+}
+
+.hero-section--text h3{
+    margin-top: 50px;
+    font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #5d5d5d;
+}
+
+.hero-section-img{
+    width: 75% !important;
+}
 
 /* Disable all hover */
 @media (max-width: 769px) {
