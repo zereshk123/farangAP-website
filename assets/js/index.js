@@ -27,13 +27,13 @@ window.addEventListener("scroll", () => {
     visa_img.style.transform = `translateX(${tranlateX_visa}px)`;
 
 
-    const traslateX_hero_sec_txt = Math.min(scrollPosition / 5, 150);
-    const opacity_hero_sec_txt = Math.max(1 - scrollPosition / 300, 0);
+    const traslateX_hero_sec_txt = Math.min(scrollPosition / 10, 150);
+    const opacity_hero_sec_txt = Math.max(1 - scrollPosition / 500, 0);
     her_sec_txt.style.transform = `translateX(${traslateX_hero_sec_txt}px)`;
     her_sec_txt.style.opacity = opacity_hero_sec_txt;
 
-    const traslateX_hero_sec_img = Math.min(scrollPosition / 5, 150);
-    const opacity_hero_sec_img = Math.max(1 - scrollPosition / 300, 0);
+    const traslateX_hero_sec_img = Math.min(scrollPosition / 10, 150);
+    const opacity_hero_sec_img = Math.max(1 - scrollPosition / 500, 0);
     her_sec_img.style.transform = `translateX(-${traslateX_hero_sec_img}px)`;
     her_sec_img.style.opacity = opacity_hero_sec_img;
 });
