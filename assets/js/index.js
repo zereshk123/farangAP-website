@@ -4,6 +4,8 @@ window.addEventListener("scroll", () => {
     const star_2 = document.querySelector(".hero-section--img__star-2");
     const star_3 = document.querySelector(".hero-section--img__star-3");
     const visa_img = document.querySelector(".hero-section--img__visa-img");
+    const her_sec_txt = document.querySelector(".hero-section--text");
+    const her_sec_img = document.querySelector(".hero-section--img");
     const scrollPosition = window.scrollY;
 
     const rotateValue_s1 = Math.min(scrollPosition / 1.7, 360);
@@ -23,5 +25,15 @@ window.addEventListener("scroll", () => {
 
     const tranlateX_visa = Math.min(scrollPosition / 25, 25);
     visa_img.style.transform = `translateX(${tranlateX_visa}px)`;
-});
 
+
+    const traslateX_hero_sec_txt = Math.min(scrollPosition / 5, 150);
+    const opacity_hero_sec_txt = Math.max(1 - scrollPosition / 300, 0);
+    her_sec_txt.style.transform = `translateX(${traslateX_hero_sec_txt}px)`;
+    her_sec_txt.style.opacity = opacity_hero_sec_txt;
+
+    const traslateX_hero_sec_img = Math.min(scrollPosition / 5, 150);
+    const opacity_hero_sec_img = Math.max(1 - scrollPosition / 300, 0);
+    her_sec_img.style.transform = `translateX(-${traslateX_hero_sec_img}px)`;
+    her_sec_img.style.opacity = opacity_hero_sec_img;
+});
