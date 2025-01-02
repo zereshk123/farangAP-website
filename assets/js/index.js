@@ -3,6 +3,7 @@ window.addEventListener("scroll", () => {
     const star_1 = document.querySelector(".hero-section--img__star-1");
     const star_2 = document.querySelector(".hero-section--img__star-2");
     const star_3 = document.querySelector(".hero-section--img__star-3");
+    const visa_img = document.querySelector(".hero-section--img__visa-img");
     const scrollPosition = window.scrollY;
 
     const rotateValue_s1 = Math.min(scrollPosition / 1.7, 360);
@@ -19,4 +20,8 @@ window.addEventListener("scroll", () => {
     const opacityValue_s3 = Math.max(1 - scrollPosition / 200, 0.1);
     star_3.style.transform = `rotate(${rotateValue_s3}deg)`;
     star_3.style.opacity = opacityValue_s3;
+
+    const tranlateX_visa = Math.min(scrollPosition / 25, 25);
+    visa_img.style.transform = `translateX(${tranlateX_visa}px)`;
 });
+
