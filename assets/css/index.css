@@ -283,7 +283,6 @@
     color: #a4a4a4;
 }
 
-
 .services-sec--context img{
     border: 1px solid transparent;
     transition: 0.3s;
@@ -374,6 +373,20 @@
     background-color: #daf78c;
 }
  
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.why-us-sec--context__r-animated{
+    animation: fadeIn 0.5s ease-out;
+}
 
 @media (max-width: 1025px){
     .hero-section--img__image{

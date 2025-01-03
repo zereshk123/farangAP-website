@@ -8,6 +8,8 @@ window.addEventListener("scroll", () => {
     const her_sec_img = document.querySelector(".hero-section--img");
     const scrollPosition = window.scrollY;
 
+    if (window.innerWidth <= 426) return;
+
     const rotateValue_s1 = Math.min(scrollPosition / 1.7, 360);
     const opacityValue_s1 = Math.max(1 - scrollPosition / 200, 0.1);
     star_1.style.transform = `rotate(${rotateValue_s1}deg)`;
@@ -38,7 +40,7 @@ window.addEventListener("scroll", () => {
     her_sec_img.style.opacity = opacity_hero_sec_img;
 });
 
-function showContent(event, index, button){
+function showContent(event, index, button) {
     event.preventDefault();
     
     const contentDiv = document.getElementById('why-us-sec--context__r');
@@ -48,11 +50,15 @@ function showContent(event, index, button){
         3: '<img src="assets/images/why-us/transparency-trust.png" alt="transparency-trust...">',
         4: '<img src="assets/images/why-us/continuous-improvement.png" alt="continuous-improvement...">',
     };
+
+    contentDiv.classList.remove('why-us-sec--context__r-animated');
+    void contentDiv.offsetWidth;
     contentDiv.innerHTML = content[index];
+    contentDiv.classList.add('why-us-sec--context__r-animated');
 
     document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
     document.querySelectorAll('.button-box').forEach(box => box.classList.add('inactive'));
-
+    
     button.classList.add('active');
     button.nextElementSibling.classList.remove('inactive');
 }
