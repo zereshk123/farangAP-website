@@ -458,9 +458,9 @@
 
 
 @media (max-width: 769px){
-    *:hover {
+    /* *:hover {
         pointer-events: none;
-    }
+    } */
 
     .hero-section--img__image{
         width: 100% !important;
@@ -510,7 +510,6 @@
         padding: 10px 0;
     }
 }
-
 
 @media (max-width: 426px){
     .hero-section--img{
