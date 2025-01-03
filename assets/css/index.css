@@ -176,9 +176,9 @@
 
 .hero-section--text h3{
     margin-top: 50px;
-    font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: vazir-l,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    color: #5d5d5d;
+    color: #a4a4a4;
 }
 
 .hero-section-btns a{
@@ -254,13 +254,17 @@
     transition: all 0.3s ease-out;
 }
 
+.hero-section-arrow-down{
+    height: 180px;
+}
+
 .hero-section-arrow-down img{
     position: relative;
     opacity: 0.5;
     transform: rotate(10deg);
     width: 150px;
     top: -70px;
-    left: -150px;
+    left: 320px;
 }
 
 .services-sec{
@@ -274,8 +278,10 @@
 }
 
 .servicrs-sec--title p{
-    font-family: vazir-m,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: vazir-l,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #a4a4a4;
 }
+
 
 .services-sec--context img{
     border: 1px solid transparent;
@@ -315,8 +321,45 @@
     .hero-section--text h3{
         font-size: 19px;
     }
+
+    .hero-section-arrow-down{
+        height: 180px;
+    }
+
+    .hero-section-arrow-down img{
+        transform: rotate(10deg);
+        width: 150px;
+        top: -70px;
+        left: 250px;
+    }
+
+    .servicrs-sec--title h2{
+        font-size: 25px;
+    }
+
+    .services-sec--context{
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+    }
+
+    .services-sec--context .row{
+        flex-wrap: nowrap;
+    }
+
+    .services-sec--context .row div {
+        flex: 0 0 auto;
+        display: inline-block;
+        scroll-snap-align: end;
+        width: 250px;
+    }
 }
+
+
 @media (max-width: 769px){
+    *:hover {
+        pointer-events: none;
+    }
+
     .hero-section--img__image{
         width: 100% !important;
     }
@@ -338,7 +381,13 @@
     .hero-section--text h3{
         font-size: 20px;
     }
+
+    .services-sec--context .row div {
+        width: 230px;
+    }
 }
+
+
 @media (max-width: 426px){
     .hero-section--img{
         margin-top: 20px !important;
@@ -389,7 +438,13 @@
     .hero-section--text h3{
         font-size: 18px;
     }
+    
+    .services-sec--context .row div {
+        width: 180px;
+    }
 }
+
+
 @media (max-width: 376px){
     .hero-section--text h1{
         font-size: 23px;
@@ -403,6 +458,8 @@
         font-size: 18px;
     }
 }
+
+
 @media (max-width: 320px){
     .hero-section--text h1{
         font-size: 20px;
@@ -415,11 +472,8 @@
     .hero-section--text h3{
         font-size: 18px;
     }
-}
-
-/* Disable all hover */
-@media (max-width: 769px) {
-    *:hover {
-        pointer-events: none; /* هاور را به طور کامل غیرفعال می‌کند */
+    
+    .services-sec--context .row div {
+        width: 90%;
     }
 }
