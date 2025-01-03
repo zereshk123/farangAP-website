@@ -37,3 +37,22 @@ window.addEventListener("scroll", () => {
     her_sec_img.style.transform = `translateX(-${traslateX_hero_sec_img}px)`;
     her_sec_img.style.opacity = opacity_hero_sec_img;
 });
+
+function showContent(event, index, button){
+    event.preventDefault();
+    
+    const contentDiv = document.getElementById('why-us-sec--context__r');
+    const content = {
+        1: '<img src="assets/images/why-us/services.png" alt="services...">',
+        2: '<img src="assets/images/why-us/customer-needs.png" alt="customer-needs...">',
+        3: '<img src="assets/images/why-us/transparency-trust.png" alt="transparency-trust...">',
+        4: '<img src="assets/images/why-us/continuous-improvement.png" alt="continuous-improvement...">',
+    };
+    contentDiv.innerHTML = content[index];
+
+    document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.button-box').forEach(box => box.classList.add('inactive'));
+
+    button.classList.add('active');
+    button.nextElementSibling.classList.remove('inactive');
+}
