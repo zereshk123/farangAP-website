@@ -62,3 +62,35 @@ function showContent(event, index, button) {
     button.classList.add('active');
     button.nextElementSibling.classList.remove('inactive');
 }
+const container = document.querySelector('.migration-countries-sec--content');
+let isMouseDown = false;
+let startX;
+let scrollLeft;
+
+// زمانی که موس بر روی کانتینر فشرده می‌شود
+container.addEventListener('mousedown', (e) => {
+  isMouseDown = true;
+  container.style.cursor = 'grabbing'; // تغییر نشانه موس
+  startX = e.pageX - container.offsetLeft; // موقعیت شروع موس
+  scrollLeft = container.scrollLeft; // موقعیت اسکرول شروع
+});
+
+// زمانی که موس از کانتینر خارج می‌شود یا دکمه موس رها می‌شود
+container.addEventListener('mouseleave', () => {
+  isMouseDown = false;
+  container.style.cursor = 'grab'; // تغییر نشانه موس به حالت اولیه
+});
+
+container.addEventListener('mouseup', () => {
+  isMouseDown = false;
+  container.style.cursor = 'grab'; // تغییر نشانه موس به حالت اولیه
+});
+
+// زمانی که موس حرکت می‌کند و موس پایین است
+container.addEventListener('mousemove', (e) => {
+  if (!isMouseDown) return; // اگر موس پایین نیست، اسکرول انجام نشود
+  e.preventDefault(); // جلوگیری از رفتار پیش‌فرض
+  const x = e.pageX - container.offsetLeft; // موقعیت جدید موس
+  const walk = (x - startX) * 2; // سرعت حرکت اسکرول
+  container.scrollLeft = scrollLeft - walk; // حرکت اسکرول به موقعیت جدید
+});

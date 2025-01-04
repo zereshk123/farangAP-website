@@ -283,20 +283,17 @@
     color: #a4a4a4;
 }
 
-.services-sec--context img{
+.services-sec--content img{
+    width: 100%;
     border: 1px solid transparent;
     transition: 0.3s;
 }
 
-.services-sec--context img:hover{
+.services-sec--content img:hover{
     transform: translateY(-10px);
     background-color: #b8f10e34;
     border-color: #b8f10e;
     box-shadow: 0px 7px 29px 0px #b8f10e63;
-}
-
-.services-sec--context img{
-    width: 100%;
 }
 
 .why-us-sec--title{
@@ -321,11 +318,11 @@
     color: #a4a4a4;
 }
 
-.why-us-sec--context__r img{
+.why-us-sec--content__r img{
     width: 100%;
 }
 
-.why-us-sec--context__l a{
+.why-us-sec--content__l a{
     font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #daf78c;
     border: 2px solid #daf78c;
@@ -341,18 +338,18 @@
     transition: 0.3s;
 }
 
-.why-us-sec--context__l .button-wrapper:hover{
+.why-us-sec--content__l .button-wrapper:hover{
     transform: scale(1.05);
 }
 
-.why-us-sec--context__l .button-wrapper:hover > a{
+.why-us-sec--content__l .button-wrapper:hover > a{
     background-color: transparent;
     border-color: #b8f10e;
     box-shadow: 0px 7px 29px 0px #b8f10e63;
 }
 
 
-.why-us-sec--context__l .button-box{
+.why-us-sec--content__l .button-box{
     width: 23px;
     height: 100%;
     padding: 15px 0;
@@ -364,12 +361,12 @@
     transition: 0.3s;
 }
 
-.why-us-sec--context__l .active{
+.why-us-sec--content__l .active{
     background-color: #b8f10e !important;
     border: 2px solid #b8f10e !important;
 }
 
-.why-us-sec--context__l .button-box.inactive {
+.why-us-sec--content__l .button-box.inactive {
     background-color: #daf78c;
 }
  
@@ -384,8 +381,82 @@
     }
 }
 
-.why-us-sec--context__r-animated{
+.why-us-sec--content__r-animated{
     animation: fadeIn 0.5s ease-out;
+}
+
+.migration-countries-sec--title h2{
+    font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+
+.migration-countries-sec--title p{
+    font-family: vazir-l,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #a4a4a4;
+}
+
+.migration-countries-sec--content{
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    user-select: none;
+}
+
+.migration-countries-sec--content::-webkit-scrollbar{
+    display: none;
+}
+
+.migration-countries-sec--content__country-box{
+    border: 2px solid transparent;
+    padding: 3px;
+    transition: 0.3s;
+    scroll-snap-align: start;
+}
+
+.migration-countries-sec--content__country-box .img{
+    width: 310px;
+}
+
+.migration-countries-sec--content__country-box img{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+
+.migration-countries-sec--content__country-box .content a{
+    font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000;
+    user-select: none;
+    background-color: #b8f10e;
+    border: 2px solid #b8f10e;
+    transition: 0.3s;
+}
+
+.migration-countries-sec--content__country-box .content{
+    width: 230px !important;
+}
+
+.migration-countries-sec--content__country-box .content a:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    box-shadow: 0px 7px 29px 0px #b8f10e63;
+    border: 2px solid #b8f10e;
+}
+
+.migration-countries-sec--content__country-box .content a:hover > i{
+    color: #b8f10e !important;
+}
+
+.migration-countries-sec--content__country-box .content div{
+    margin-top: -20px !important;
+    text-align: justify;
+    background-color: #ededed;
+}
+
+.migration-countries-sec--content__country-box .content div p{
+    font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
 }
 
 @media (max-width: 1025px){
@@ -426,16 +497,16 @@
         font-size: 25px;
     }
 
-    .services-sec--context{
+    .services-sec--content{
         white-space: nowrap;
         scroll-snap-type: x mandatory;
     }
 
-    .services-sec--context .row{
+    .services-sec--content .row{
         flex-wrap: nowrap;
     }
 
-    .services-sec--context .row div {
+    .services-sec--content .row div {
         flex: 0 0 auto;
         display: inline-block;
         scroll-snap-align: end;
@@ -459,11 +530,11 @@
         font-size: 15px;
     }
 
-    .why-us-sec--context__l a{
+    .why-us-sec--content__l a{
         font-size: 15px;
     }
     
-    .why-us-sec--context__l .button-box{
+    .why-us-sec--content__l .button-box{
         width: 20px;
         padding: 13px 0;
     }
@@ -497,7 +568,7 @@
         font-size: 20px;
     }
 
-    .services-sec--context .row div {
+    .services-sec--content .row div {
         width: 230px;
     }
 
@@ -513,11 +584,11 @@
         font-size: 13px;
     }
 
-    .why-us-sec--context__l a{
+    .why-us-sec--content__l a{
         font-size: 13px;
     }
     
-    .why-us-sec--context__l .button-box{
+    .why-us-sec--content__l .button-box{
         right: 3px;
         width: 18px;
         padding: 10px 0;
@@ -579,7 +650,7 @@
         font-size: 18px;
     }
     
-    .services-sec--context .row div {
+    .services-sec--content .row div {
         width: 180px;
     }
 
@@ -599,21 +670,21 @@
         font-size: 13px;
     }
 
-    .why-us-sec--context__l a{
+    .why-us-sec--content__l a{
         font-size: 12px;
     }
     
-    .why-us-sec--context__l .button-box{
+    .why-us-sec--content__l .button-box{
         display: none;
     }
 
-    .why-us-sec--context__l a{
+    .why-us-sec--content__l a{
         background-color: #daf78c;
         border: 2px solid #b8f10e;
         border-style: dashed;
     }
 
-    .why-us-sec--context__l .active{
+    .why-us-sec--content__l .active{
         background-color: #b8f10e !important;
         border: 2px solid #b8f10e !important;
         box-shadow: 0px 5px 20px 0px #b8f10e6f;
@@ -633,7 +704,7 @@
         font-size: 18px;
     }
 
-    .why-us-sec--context__l a{
+    .why-us-sec--content__l a{
         padding: 0 2px !important;
         border-radius: 8px !important;
         font-size: 10px;
@@ -654,7 +725,7 @@
         font-size: 18px;
     }
     
-    .services-sec--context .row div {
+    .services-sec--content .row div {
         width: 90%;
     }
 }
