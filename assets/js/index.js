@@ -43,7 +43,7 @@ window.addEventListener("scroll", () => {
 function showContent(event, index, button) {
     event.preventDefault();
     
-    const contentDiv = document.getElementById('why-us-sec--context__r');
+    const contentDiv = document.getElementById('why-us-sec--content__r');
     const content = {
         1: '<img src="assets/images/why-us/services.png" alt="services...">',
         2: '<img src="assets/images/why-us/customer-needs.png" alt="customer-needs...">',
@@ -51,10 +51,10 @@ function showContent(event, index, button) {
         4: '<img src="assets/images/why-us/continuous-improvement.png" alt="continuous-improvement...">',
     };
 
-    contentDiv.classList.remove('why-us-sec--context__r-animated');
+    contentDiv.classList.remove('why-us-sec--content__r-animated');
     void contentDiv.offsetWidth;
     contentDiv.innerHTML = content[index];
-    contentDiv.classList.add('why-us-sec--context__r-animated');
+    contentDiv.classList.add('why-us-sec--content__r-animated');
 
     document.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
     document.querySelectorAll('.button-box').forEach(box => box.classList.add('inactive'));
@@ -62,6 +62,7 @@ function showContent(event, index, button) {
     button.classList.add('active');
     button.nextElementSibling.classList.remove('inactive');
 }
+
 const container = document.querySelector('.migration-countries-sec--content');
 let isMouseDown = false;
 let startX;
