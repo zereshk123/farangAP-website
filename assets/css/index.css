@@ -8,11 +8,6 @@
     width: 70% !important;
 }
 
-@media screen and (max-width: 768px){
-    .site-logo{
-        width: 30% !important;
-    }
-}
 @media screen and (max-width: 426px){
     .site-logo{
         padding: 5px 10px;
@@ -230,11 +225,13 @@
     top: -10px;
     left: -220px;
 }
+
 .hero-section--img__star-vector img:nth-child(2){
     position: relative;
     top: 10px;
     left: -270px;
 }
+
 .hero-section--img__star-vector img:nth-child(3){
     position: relative;
     top: 10px;
@@ -276,6 +273,19 @@
 .servicrs-sec--title h2{
     font-size: 28px;
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+}
+
+.servicrs-sec--title h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #b8f10e;
 }
 
 .servicrs-sec--title p{
@@ -305,6 +315,19 @@
 .why-us-sec--title h2{
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.why-us-sec--title h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #b8f10e;
 }
 
 .why-us-sec--title h2 img{
@@ -388,6 +411,19 @@
 .migration-countries-sec--title h2{
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 28px;
+    padding-bottom: 5px;
+}
+
+.migration-countries-sec--title h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #b8f10e;
 }
 
 .migration-countries-sec--title p{
@@ -419,7 +455,6 @@
 
 .migration-countries-sec--content__country-box img{
     width: 100%;
-    height: 100%;
     user-select: none;
     pointer-events: none;
 }
@@ -434,7 +469,7 @@
 }
 
 .migration-countries-sec--content__country-box .content{
-    width: 230px !important;
+    width: 230px;
 }
 
 .migration-countries-sec--content__country-box .content a:hover{
@@ -449,6 +484,7 @@
 }
 
 .migration-countries-sec--content__country-box .content div{
+    height: 100%;
     margin-top: -20px !important;
     text-align: justify;
     background-color: #ededed;
@@ -546,6 +582,10 @@
         pointer-events: none;
     } */
 
+    .site-logo{
+        width: 30% !important;
+    }
+
     .hero-section--img__image{
         width: 100% !important;
     }
@@ -592,6 +632,22 @@
         right: 3px;
         width: 18px;
         padding: 10px 0;
+    }
+        
+    .migration-countries-sec--title h2{
+        font-size: 20px;
+    }
+
+    .migration-countries-sec--title p{
+        font-size: 13px;
+    }
+
+    .migration-countries-sec--content__country-box .content a{
+        font-size: 14px;
+    }
+    
+    .migration-countries-sec--content__country-box .content div p{
+        font-size: 13px;
     }
 }
 
@@ -688,6 +744,22 @@
         background-color: #b8f10e !important;
         border: 2px solid #b8f10e !important;
         box-shadow: 0px 5px 20px 0px #b8f10e6f;
+    }
+    
+    .migration-countries-sec--content__country-box .content{
+        width: 50%;
+    }
+
+    .migration-countries-sec--content__country-box .content a{
+        font-size: 13px;
+    }
+
+    .migration-countries-sec--content__country-box .content div{
+        margin: 0 !important;
+    }
+    
+    .migration-countries-sec--content__country-box .content div p{
+        font-size: 12px;
     }
 }
 

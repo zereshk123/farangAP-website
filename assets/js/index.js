@@ -94,3 +94,28 @@ container.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 2; // سرعت حرکت اسکرول
   container.scrollLeft = scrollLeft - walk; // حرکت اسکرول به موقعیت جدید
 });
+
+function truncateText(element, wordLimit) {
+  let text = element.textContent; // گرفتن متن از عنصر
+  let words = text.split(' '); // تقسیم متن به کلمات
+  if (words.length > wordLimit) {
+      words = words.slice(0, wordLimit); // انتخاب فقط n کلمه
+      element.textContent = words.join(' ') + '...'; // پیوستن کلمات و اضافه کردن سه نقطه
+  }
+}
+
+const elements = document.querySelectorAll('.truncate-text');
+
+if (window.innerWidth >= 768) {
+  elements.forEach(element => {
+    truncateText(element, 71);
+  });
+} else if (window.innerWidth >= 426) {
+  elements.forEach(element => {
+    truncateText(element, 79);
+  });
+} else {
+  elements.forEach(element => {
+    truncateText(element, 78);
+  });
+}
