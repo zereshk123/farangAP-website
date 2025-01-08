@@ -415,8 +415,6 @@
     overflow: hidden;
 }
 
-
-
 .why-us-sec--content .accordion-button {
     background-color: #daf78c;
     color: #000;
@@ -585,6 +583,94 @@
     text-align: justify;
 }
 
+.FAQ-sec--title h2{
+    font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+}
+
+.FAQ-sec--title h2::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 30%;
+    height: 4px;
+    border-radius: 100px;
+    background-color: #b8f10e;
+}
+
+.FAQ-sec--title p{
+    font-family: vazir-l,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #a4a4a4;
+}
+
+.FAQ-sec--content__img img{
+    width: 70%;
+}
+
+.FAQ-sec--content__accordion .accordion{
+    overflow: hidden;
+    border: none !important;
+}
+
+.FAQ-sec--content__accordion .accordion-item {
+    border: none !important;
+}
+
+.FAQ-sec--content__accordion .accordion-header {
+    background-color: transparent;
+}
+
+.FAQ-sec--content__accordion .accordion-button{
+    padding: 30px 20px;
+    border: 2px solid #4a4a4a76;
+    background-color: #dcf88b;
+    font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px !important;
+}
+
+.FAQ-sec--content__accordion .accordion-button:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #b8f10e;
+    border: 2px solid #4a4a4a76;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.accordion-item .accordion-button.show{
+    border-top: none;
+}
+
+.accordion-button::after {
+    content: none !important;
+}
+
+.accordion-body {
+    padding: 0 10px 10px 10px !important;
+    background-color: #b8f10e;
+    color: #555;
+    border: 2px solid #4a4a4a76;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: vazir-l,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.accordion-button:not(.collapsed){
+    border-bottom: none;
+    border-radius: 20px 20px 0 0 !important;
+    background-color: #b8f10e !important;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button.collapsed{
+    background-color: #dcf88b !important;
+    color: #000 !important;
+}
 
 @media (max-width: 1025px){
     .hero-section--img__image{

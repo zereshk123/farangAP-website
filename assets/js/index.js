@@ -120,3 +120,29 @@ if (window.innerWidth >= 768) {
     truncateText(element, 78);
   });
 }
+
+document.querySelectorAll('.accordion-button').forEach(button => {
+  button.addEventListener('click', () => {
+      // بازنشانی تمامی آیکون‌ها
+      document.querySelectorAll('.accordion-button').forEach(btn => {
+          const icon = btn.querySelector('.icon-toggle');
+          if (icon) {
+              icon.classList.remove('bi-dash-circle');
+              icon.classList.add('bi-plus-circle');
+          }
+      });
+
+      // تغییر آیکون دکمه کلیک شده
+      const icon = button.querySelector('.icon-toggle');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      if (icon) {
+        if (isExpanded) {
+            icon.classList.remove('bi-plus-circle');
+            icon.classList.add('bi-dash-circle');
+        } else {
+            icon.classList.remove('bi-dash-circle');
+            icon.classList.add('bi-plus-circle');
+        }
+      }
+  });
+});
