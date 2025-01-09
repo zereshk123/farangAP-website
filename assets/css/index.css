@@ -8,18 +8,6 @@
     width: 70% !important;
 }
 
-@media screen and (max-width: 426px){
-    .site-logo{
-        padding: 5px 10px;
-        width: 55% !important;
-    }
-}
-@media screen and (max-width: 376px){
-    .site-logo{
-        width: 65% !important;
-    }
-}
-
 .navbar-box--list{
     position: relative;
     padding: 5px 0;
@@ -33,12 +21,6 @@
 .navbar-box--list:hover{
     color: #000;
     transform: translateY(-2px);
-}
-
-@media screen and (max-width: 1024px){
-    .navbar-box--list{
-        font-size: 15px;
-    }
 }
 
 #active-menu{
@@ -57,7 +39,6 @@
     border-radius: 100px;
     background-color: #b8f10e;
 }
-
 
 .button-bar--btn{
     background-color: #b8f10e !important;
@@ -78,13 +59,6 @@
 .button-bar--btn:nth-child(1){
     width: 40px;
     height: 40px;
-}
-
-@media screen and (max-width: 376px) {
-    .button-bar--btn:nth-child(1){
-        width: 35px;
-        height: 35px;
-    }
 }
 
 .dropdown-menu{
@@ -151,7 +125,6 @@
     height: 80vh;
 }
 
-
 .hero-section--text h1{
     font-family: vazir-m,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 38px;
@@ -203,13 +176,6 @@
     background-color: #b8f10e !important;
     color: #fff !important;
     box-shadow: 0px 7px 29px 0px #b8f10e4f;
-}
-
-@media screen and (max-width: 769px){
-    .hero-section-btns a{
-        font-size: 15px;
-        font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
 }
 
 .hero-section--img__image{
@@ -675,6 +641,10 @@
 }
 
 @media (max-width: 1025px){
+    .navbar-box--list{
+        font-size: 15px;
+    }
+
     .hero-section--img__image{
         width: 90% !important;
     }
@@ -819,6 +789,11 @@
         font-size: 35px;
     }
 
+    .hero-section-btns a{
+        font-size: 15px;
+        font-family: vazir-n,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
     .underline-text-brush{
         width: 140px !important;
         height: 50px !important;
@@ -912,6 +887,11 @@
 }
 
 @media (max-width: 426px){
+    .site-logo{
+        padding: 5px 10px;
+        width: 55% !important;
+    }
+
     .hero-section--img{
         width: 80% !important;
         padding: 0 !important;
@@ -1040,6 +1020,15 @@
 }
 
 @media (max-width: 376px){
+    .site-logo{
+        width: 65% !important;
+    }
+    
+    .button-bar--btn:nth-child(1){
+        width: 35px;
+        height: 35px;
+    }
+
     .hero-section--text h1{
         font-size: 23px;
     }
