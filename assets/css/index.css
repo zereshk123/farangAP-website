@@ -525,12 +525,12 @@
     height: 58%;
 }
 
-.about-us-sec--content__bg-l img{
+/* .about-us-sec--content__bg-l img{
     position: absolute;
     margin-top: -190px;
     left: 0;
     width: 50%;
-}
+} */
 
 .about-us-sec--content__txt{
     margin-top: 27px;
