@@ -586,6 +586,7 @@
 .FAQ-sec--title h2{
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 28px;
+    margin-bottom: 3px !important;
 }
 
 .FAQ-sec--title h2::after{
@@ -626,6 +627,7 @@
     padding: 30px 20px;
     border: 2px solid #4a4a4a76;
     background-color: #dcf88b;
+    text-align: right;
     font-family: vazir-b,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px !important;
 }
@@ -782,6 +784,18 @@
     .about-us-sec--content__txt p{
         font-size: 16px;
     }
+
+    .FAQ-sec--title h2{
+        font-size: 23px;
+    }
+
+    .FAQ-sec--title p{
+        font-size: 15px;
+    }
+
+    .FAQ-sec--content__img img{
+        width: 80%;
+    }
 }
 
 @media (max-width: 769px){
@@ -875,6 +889,25 @@
 
     .about-us-sec--content__txt p{
         font-size: 16px;
+    }
+
+    .FAQ-sec--title h2{
+        font-size: 20px;
+    }
+
+    .FAQ-sec--title p{
+        font-size: 13px;
+    }
+
+    .FAQ-sec--content__img img{
+        width: 100%;
+    }
+
+    
+    .FAQ-sec--content__accordion .accordion-button{
+        padding: 25px 15px;
+        font-size: 16px;
+        line-height: 1.6rem;
     }
 }
 
@@ -1000,6 +1033,10 @@
     .about-us-sec--content__txt p{
         font-size: 16px;
     }
+
+    .FAQ-sec--content__img img{
+        width: 80%;
+    }
 }
 
 @media (max-width: 376px){
@@ -1023,7 +1060,7 @@
 }
 
 
-@media (max-width: 320px){
+@media (max-width: 321px){
     .hero-section--text h1{
         font-size: 20px;
     }
@@ -1038,5 +1075,19 @@
     
     .services-sec--content .row div {
         width: 90%;
+    }
+    
+    .FAQ-sec--title h2{
+        font-size: 20px;
+    }
+
+    .FAQ-sec--title p{
+        font-size: 13px;
+    }
+
+    .FAQ-sec--content__accordion .accordion-button{
+        padding: 20px 10px;
+        font-size: 15px;
+        line-height: 1.5rem;
     }
 }
